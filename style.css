@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    margin-bottom: 20px;
+    align-self: self-end;
+    padding: 10px;
+}
+#addcharacter {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgb(30, 35, 61);
+    color: white;
+    padding: 20px 40px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+#addcharacter h1 {
+    text-align: center;
+}
+#addcharacter input {
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: solid black 1px;
+}
+#addcharacter button {
+    padding: 10px 20px;
+    border: 0;
+    background: rgb(64, 109, 231);
+    color: white;
+    border-radius: 20px;
+}
+
+.card {
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+}
+.card img {
+    width: 190px;
+}
+.card h3, .card h4, .card h6, .card p {
+    margin: 5px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORV-API</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <button onclick="fetchpersonagens()">Mostrar personagens</button>
+    </header>
+    <div id="formulario">
+        <form action="/characters" id="addcharacter">
+            <h1>Cadastrar Personagem</h1>
+            <label>Nome: </label>
+            <input type="text" required name="name" placeholder="Nome">
+            <label>Raça: </label>
+            <input type="text" required name="race" placeholder="Raça">
+            <label>Patrocinador: </label>
+            <input type="text" required name="constellation" placeholder="Patrocinador estelar">
+            <label>Descrição: </label>
+            <textarea name="description" placeholder="Descrição" required rows="3"></textarea>
+            <label>Imagem 1: </label>
+            <input type="file" name="img1" required accept="image/*">
+            <label>Imagem 2: </label>
+            <input type="file" name="img2" required accept="image/*">
+            <button type="button" onclick="addcharacter()">Cadastrar</button>
+        </form>
+    </div>
+    <div id="personagens">
+        <div id="container">
+
+        </div>
+    </div>
+</body>
+</html>
