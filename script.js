@@ -24,9 +24,11 @@ async function addcharacter() {
 
 async function fetchpersonagens() {
     let container = document.getElementById('container')
+    container.innerHTML = ''
     try {
         let response = await fetch(`${apiurl}/characters`)
         let personagens = await response.json()
+
         if (personagens.length == 0) {
             container.innerHTML ='<h1>Nenhum personagem registrado</h1>'
             return
