@@ -34,6 +34,10 @@ header {
     color: white;
     border-radius: 20px;
 }
+#addcharacter button:hover {
+    cursor: pointer;
+    background: rgb(85, 128, 247);
+}
 
 .card {
     margin-top: 20px;
