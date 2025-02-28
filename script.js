@@ -11,7 +11,7 @@ async function addcharacter() {
         if (response.ok) {
             alert('Personagem adicionado!')
             form.reset()
-            mostracharacters()
+            fetchpersonagens()
         }
         else {
             throw new Error('Erro ao adicionar personagem')

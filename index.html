@@ -12,7 +12,7 @@
         <button onclick="fetchpersonagens()">Mostrar personagens</button>
     </header>
     <div id="formulario">
-        <form action="/characters" id="addcharacter">
+        <form action="/characters" id="addcharacter" enctype="multipart/form-data" method="post">
             <h1>Cadastrar Personagem</h1>
             <label>Nome: </label>
             <input type="text" required name="name" placeholder="Nome">
